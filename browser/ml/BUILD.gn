@@ -1,0 +1,9 @@
+test("onnx_model_handler_unittest") {
+  sources = [ "onnx_model_handler_unittest.cc" ]
+  deps = [
+    "//base",
+    "//testing/gtest",
+    "//third_party/onnxruntime",
+  ]
+  data = [ "//chrome/browser/resources/ml_model/xss_model.onnx" ]
+}

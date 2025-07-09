@@ -1,0 +1,8 @@
+source_set("ml_model") {
+  sources = [ "model_handler.cc" ]
+  deps = [
+    "//third_party/onnxruntime",
+    "//base",
+  ]
+  data = [ "xss_model.onnx" ]  # Marks model as required data file
+}
